@@ -3,18 +3,15 @@ package com.projects.echoes_of_adventure;
 import Characters.Player;
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
 import com.badlogic.gdx.physics.box2d.World;
-import com.badlogic.gdx.utils.ScreenUtils;
-import utilities.LoadResources;
+import utilities.ManageMap;
 
 public class GameScreen extends ScreenAdapter {
     /*final MyGame game;
@@ -69,7 +66,7 @@ public class GameScreen extends ScreenAdapter {
     Box2DDebugRenderer box2DDebugRenderer;
 
     OrthogonalTiledMapRenderer orthogonalTiledMapRenderer;
-    LoadResources loadResources;
+    ManageMap loadResources;
     private Player player;
 
     public GameScreen(OrthographicCamera camera){
@@ -79,7 +76,7 @@ public class GameScreen extends ScreenAdapter {
         this.world = new World(new Vector2(0, -50f), false);
         this.box2DDebugRenderer = new Box2DDebugRenderer();
 
-        this.loadResources = new LoadResources(this);
+        this.loadResources = new ManageMap(this);
         this.orthogonalTiledMapRenderer = loadResources.setUpMap();
 
     }

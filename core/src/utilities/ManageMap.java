@@ -15,12 +15,12 @@ import com.projects.echoes_of_adventure.GameScreen;
 
 import com.badlogic.gdx.utils.Logger;
 
-public class LoadResources {
+public class ManageMap {
     private TiledMap tiledMap;
     private static final Logger logger = new Logger(GameScreen.class.getName(), Logger.DEBUG);
     private GameScreen gScreen;
 
-    public LoadResources(GameScreen gs){
+    public ManageMap(GameScreen gs){
         gScreen = gs;
     }
 
